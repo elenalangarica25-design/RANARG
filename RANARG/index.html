@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RANARG 🐸</title>
+    
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./acciones.js" defer></script>
+</head>
+<body>
+     <header>
+        
+    <div class="encabezado">
+        <div class="logo">
+            <img src="./imagenes/ranarg logo2.png" alt="logo ranarg">
+        </div>
+        
+            <nav>
+                <a href="#sobre">Sobre el juego</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#enemigos">Enemigos</a>
+                <a href="#mapas">Mapas</a>
+            </nav>
+        </div>
+    </header>
+
+ 
+        <section class="inicio">
+
+    <p class="subtitulo">
+        Roguelike de acción 2D · Terror + humor + ranas y más ranas 🐸
+    </p>
+
+    <h2>Una rana, un arma, una lengua que lo cambia todo</h2>
+
+    <p>
+        Combate estilo run and gun, generación de niveles distinta en cada partida
+        y una mecánica de lengua-gancho que es a la vez arma, movimiento y exploración.
+        Hasta 4 amigos pueden pelear en el modo Batalla Local.
+    </p>
+
+    <a href="#sobre" class="boton">Ver más</a>
+
+</section>
+
+
+<section id="sobre" class="inicio">
+
+    <h1>Sobre el juego</h1>
+
+    <p>
+        El protagonista es una ranita equipada con un arma y una lengua tipo gancho que funciona como su principal habilidad cuerpo a cuerpo. Su lengua puede utilizarse para atacar y atrapar enemigos, pero también sirve como herramienta de movimiento, permitiéndole alcanzar plataformas, impulsarse y explorar zonas verticales del escenario. Además, cuenta con diferentes armas de fuego y mejoras que pueden combinarse para adaptar su estilo de juego. Estas habilidades hacen que cada partida pueda ser diferente, ya que el jugador puede experimentar con distintas combinaciones de armas, mejoras y estrategias de movimiento.
+    </p>
+
+    <div class="concept">
+
+    <img src="./imagenes/sheet.png" alt="Concept 1" id="imagenConcept">
+
+</div>
+
+<div class="botonesconcept">
+
+    <button onclick="anteriorConcept()" id="anteriorConceptBTN" disabled>Anterior</button>
+
+    <button onclick="siguienteConcept()" id="siguienteConceptBTN">Siguiente</button>
+
+</div>
+
+
+</section>
+
+    <p class="separador">🐸 🐸 🐸</p>
+
+
+    <section class="seccion">
+
+        <h1>Detalles animados</h1>
+
+        <p>Algunas de las animaciones del proyecto.</p>
+
+        <div class="animaciones">
+
+            <div>
+                <div class="cuadro">
+                    <div class="rana-boca"></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="cuadro">
+                    <div class="rana-salto"></div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="cuadro">
+                    <div class="rana-dash"></div>
+                </div>
+            </div>
+            <div>
+                <div class="cuadro">
+                    <div class="rana-disparo"></div>
+                </div>
+            </div>
+
+             <div>
+                <div class="cuadro">
+                    <div class="antorcha"></div>
+                </div>
+            </div>
+
+             <div>
+                <div class="cuadro">
+                    <div class="cofre"></div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="cuadro">
+                    <div class="moneda"></div>
+                </div>
+        
+            </div>
+
+    </div>
+
+    </section>
+
+
+    <p class="separador">🐸 🐸 🐸</p>
+
+
+    <section id="pilares" class="seccion">
+
+        <h1>Pilares de diseño</h1>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>Todo es modular</h3>
+                <p>
+                    Ningún sistema conoce los detalles de otro. Agregar contenido nuevo
+                    no debería requerir modificar todo el código.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Cada partida se siente distinta</h3>
+                <p>
+                    Combinaciones de mejoras, diferentes salas, enemigos y armas.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Combate tipo run and gun</h3>
+                <p>
+                    Saltos, deslizamientos y disparos en diferentes direcciones.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>La lengua es la identidad</h3>
+                <p>
+                    La lengua funciona como arma, movimiento y parte importante
+                    de las mejoras del personaje.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <p class="separador">🐸 🐸 🐸</p>
+
+    <section id="enemigos" class="seccion diferente">
+
+    <h1>Enemigos</h1>
+
+    <p>
+       Los enemigos están diseñados para representar las características de cada zona y obligar al jugador a utilizar diferentes habilidades. Algunos tienen ataques cuerpo a cuerpo, otros atacan a distancia y algunos cuentan con movimientos especiales que dificultan el desplazamiento. Esto hace que el jugador tenga que combinar sus armas de fuego con la lengua para atacar, esquivar, atrapar enemigos o utilizar el escenario a su favor.
+
+       Además, los enemigos pueden aumentar su dificultad conforme el jugador avanza, introduciendo variantes con mayor resistencia, velocidad o patrones de ataque más complejos. De esta manera, cada zona presenta un reto diferente y evita que el combate sea repetitivo.
+    </p>
+
+    <br>
+
+    <div class="enemigos">
+
+        <div class="cuadro">
+            <div class="mosquito" id="imagenEnemigo"></div>
+        </div>
+
+    </div>
+
+    <div class="botonesenemigos">
+
+        <button onclick="anteriorEnemigo()" id="anteriorEnemigoBTN" disabled> Anterior</button>
+
+        <button onclick="siguienteEnemigo()" id="siguienteEnemigoBTN">Siguiente</button>
+
+    </div>
+
+</section>
+
+
+<p class="separador">🐸  🐸 🐸</p>
+
+
+<section id="mapas" class="seccion diferente">
+
+    <h1>Mapas</h1>
+
+    <p> Pantano: Es una zona húmeda y peligrosa, llena de agua, lodo, vegetación y plataformas inestables. Los espacios pueden ser más abiertos, pero también contar con obstáculos que dificultan el movimiento. Aquí la lengua tiene un papel importante para alcanzar plataformas, cruzar zonas peligrosas y atrapar enemigos.
+    <br> <br>
+    Templo: Es una zona más cerrada y estructurada, formada por ruinas, pasillos, plataformas y trampas. El jugador debe avanzar mientras enfrenta enemigos y utiliza la lengua para superar obstáculos o llegar a zonas elevadas. El diseño del templo puede incorporar mecanismos y elementos de exploración que hagan que el jugador tenga que observar el escenario antes de avanzar.
+    <br> <br>
+    Jungla: Es un mapa más vertical y lleno de vegetación, árboles, lianas y diferentes niveles de altura. La exploración se vuelve más dinámica porque el jugador puede utilizar la lengua para engancharse a elementos del escenario y desplazarse rápidamente entre plataformas. Los enemigos pueden aprovechar la vegetación para aparecer desde diferentes direcciones, haciendo que el jugador esté constantemente atento.
+    <br> <br>
+    En conjunto, los tres mapas buscan que el jugador no solamente avance disparando, sino que utilice la lengua como una herramienta fundamental de combate, exploración y movilidad, haciendo que el diseño del escenario y las habilidades del personaje estén directamente relacionados.
+
+</p>
+
+    <div class="mapas">
+
+        <img src="./imagenes/1.png" alt="Mapa 1" id="imagenMapa">
+
+    </div>
+
+    <div class="botonesmapa">
+
+        <button onclick="anteriorMapa()" id="anteriorBTN" disabled> Anterior</button>
+
+        <button onclick="siguienteMapa()" id="siguienteBTN"> Siguiente </button>
+
+    </div>
+
+</section>
+
+</section>
+    <p class="separador">🐸 🐸 🐸</p>
+
+    <section id="plataformas" class="seccion diferente">
+    <h2>Beta disponible próximamente</h2>
+    <div class="iconoscontenedor">
+        <img src="./imagenes/steam.webp" alt="Steam" class="icono">
+        <img src="./imagenes/playstation.png" alt="PlayStation" class="icono">
+        <img src="./imagenes/xbox.png" alt="Xbox" class="icono">
+    </div>
+</section>
+
+    <footer>
+        <p class="piepagina">RANARG — Proyecto interno de curso. Unity 6 · URP 2D.</p>
+    </footer>
+
+</body>
+</html>

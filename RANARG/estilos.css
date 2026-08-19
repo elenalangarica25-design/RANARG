@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8b8783;
+    color: #f5f1dc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    background-image: url("./imagenes/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,.boton, nav a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(241, 238, 13);
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+
+/* encabezado */
+
+header {
+    background-color: #17251f;
+    border-bottom: 2px solid #39483f;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.encabezado {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+/* INICIO */
+
+.inicio {
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin: 60px auto;
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(162, 219, 4, 0.2));
+    border: 1px solid rgba(214, 184, 90, 0.3);
+    border-radius: 18px;
+}
+
+.inicio .subtitulo {
+    color: #f1e100;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.inicio h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    color: #c4c7bd;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #d6b85a;
+    color: #17251f;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #a8d88a;
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(162, 219, 4, 0.2));
+    border: 1px solid rgba(214, 184, 90, 0.3);
+    border-radius: 18px;
+}
+
+
+.seccion p {
+    color: #c4c7bd;
+    text-align: justify;
+}
+
+.diferente {
+    max-width: none;
+}
+
+.diferente p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* SEPARADORES */
+
+.separador {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* ANIMACIONES */
+
+.animaciones {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #75ad0e;
+    border: 1px solid #39483f;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* sprites */
+
+.rana-dash,.rana-boca,.rana-salto,.mosquito,.slasher,.antorcha, .moneda, .cofre, .murcielago {
+    
+    image-rendering: pixelated; 
+    transform: scale(1.7)
+    
+    /* Hace que la imagen pixel art conserve la resolucion
+   cuando cambia de tamaño, evita que se vea borrosa. */
+}
+
+.rana-disparo {
+    image-rendering: pixelated; 
+    transform: scale(1.7)
+
+}
+  /* No me truenes Noe si le investigue :c */
+
+
+/* Tamaños y animaciones individuales */
+
+/* Aquí le digo al sprite que use la animación
+    que dure tantos segundos, que avance a la imagen
+   3 y que se repita continuamente */
+
+.rana-disparo {
+    width: 32px;
+    height: 52px;
+    background-image: url('./imagenes/DISPARO.png');
+    animation: disparo 0.6s steps(3) infinite;
+}
+
+.rana-dash {
+    width: 32px;
+    height: 52px;
+    background-image: url('./imagenes/rana\ deslizandose.png');
+    animation: dash 0.9s steps(3) infinite;
+}
+.rana-boca {
+    width: 32px;
+    height: 52px;
+    background-image: url('./imagenes/boca.png');
+    animation: boca 0.4s steps(2) infinite;
+}
+
+.rana-salto {
+    width: 32px;
+    height: 52px;
+    background-image: url('./imagenes/rana\ jump.png');
+    animation: salto 0.5s steps(3) infinite;
+}
+
+.mosquito {
+    width: 48px;
+    height: 48px;
+    background-image: url("./imagenes/mosquito.png");
+    animation: mosquito 0.5s steps(5) infinite;
+}
+
+.slasher {
+    width: 29px;
+    height: 41px;
+    background-image: url("./imagenes/slasher.png");
+    animation: cuchillo 0.8s steps(4) infinite;
+}
+
+.murcielago {
+    width: 52px;
+    height: 52px;
+    background-image: url("./imagenes/murcielago.png");
+    animation: murcielago 0.6s steps(4) infinite;
+}
+
+.antorcha {
+    width: 32px;
+    height: 32px;
+    background-image: url('./imagenes/antorcha.png');
+    animation: antorcha 0.6s steps(3) infinite;
+}
+
+.cofre {
+    width: 32px;
+    height: 32px;
+    background-image: url('./imagenes/cofre.png');
+    animation: antorcha 0.6s steps(3) infinite;
+}
+
+.moneda {
+    width: 32px;
+    height: 32px;
+    background-image: url('./imagenes/moneda.png');
+    animation: antorcha 0.6s steps(3) infinite;
+}
+
+
+/* ANIMACIONES DE LOS SPRITES */
+
+/* Esta función crea la animación, "from" indica la posición inicial de la imagen y "to" indica hasta dónde se mueve para mostrar los diferentes cuadros de la animación del sprite. */
+
+@keyframes disparo {
+    from { background-position: 0 0; }
+    to { background-position: -96px 0; }
+}
+
+@keyframes dash {
+    from { background-position: 0 0; }
+    to { background-position: -96px 0; }
+}
+
+@keyframes boca {
+    from { background-position: 0 0; }
+    to { background-position: -64px 0; }
+}
+
+@keyframes salto {
+    from { background-position: 0 0; }
+    to { background-position: -96px 0; }
+}
+
+@keyframes mosquito {
+    from { background-position: 0 0; }
+    to { background-position: -240px 0; }
+}
+
+@keyframes cuchillo {
+    from { background-position: 0 0; }
+    to { background-position: -116px 0; }
+}
+
+@keyframes murcielago {
+    from { background-position: 0 0; }
+    to { background-position: -240px 0; }
+}
+
+@keyframes antorcha {
+    from { background-position: 0 0; }
+    to { background-position: -96px 0; }
+}
+/* contenedor tarjetas */
+
+
+.tarjeta {
+    background-color: #17251f;
+    border: 1px solid #ffef0c;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 230px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.tarjeta h3 {
+    color: #a8d88a;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    text-align: left;
+}
+
+/* enemigos*/
+
+.enemigos {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+/* BOTONES */
+
+.botonesenemigos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botonesenemigos button, .botonesmapa button, .botonesconcept button {
+    background-color: #d6b85a;
+    color: #17251f;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* MAPAS Y CONCEPT */
+
+.mapas, .concept {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.mapas img, .concept img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    border: 1px solid #39483f;
+    border-radius: 12px;
+}
+
+/* ÍCONOS */
+.iconoscontenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.icono {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* PIE DE PÁGINA */
+
+.piepagina {
+    background-color: rgba(15, 15, 15, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    color: #f7de03;
+}
